@@ -1,6 +1,16 @@
--Sistema de Gestión – Tienda de Abarrotes-”ABARROTECH”
+# Sistema de Gestión – Tienda de Abarrotes-”ABARROTECH” #
 
-1.-Problemática:
+# 1. Introducción
+
+La tienda de abarrotes ABARROTECH busca mejorar su gestión de productos y ventas mediante la implementación de un sistema digital. Actualmente, los registros se realizan de forma manual en papel o planillas de cálculo, lo cual genera errores y dificulta la administración del negocio.
+
+Este documento detalla los requerimientos levantados, que servirán como base para el desarrollo del sistema de gestión.
+
+
+
+
+# 2.-Problemática:
+
 El dueño de la tienda ABARROTECH no cuenta con una base de datos para registrar los productos adquiridos ni las ventas realizadas. Esto provoca:
 Pérdida de información y duplicación de registros.
 
@@ -11,50 +21,36 @@ Pérdida de información y duplicación de registros.
 
 -Falta de reportes confiables sobre ingresos y ventas.
 
+-Sin control diferenciado de usuarios (dueño y empleados con el mismo nivel de acceso).
 
-2.-Usuarios del sistemas
-Administrador (dueño de la tienda)
+-Carencia de alertas sobre productos próximos a agotarse o vencer.
 
+# 3. Objetivos del sistema
 
-Tiene acceso total al sistema.
+Objetivo general:
+Implementar un sistema de gestión para ABARROTECH que permita digitalizar el registro de productos, ventas y reportes, mejorando la eficiencia y la toma de decisiones.
 
+Objetivos específicos:
 
-Registra y gestiona productos, categorías y proveedores.
+Controlar el stock de productos en tiempo real.
 
+Registrar las ventas diarias de forma rápida y segura.
 
-Consulta y genera reportes de ventas.
+Generar reportes de ventas confiables.
 
+Clasificar productos en categorías.
 
-Administra a los vendedores (crea cuentas, asigna roles).
+Definir roles con diferentes niveles de acceso (administrador y vendedor).
 
+# 2.-Usuarios del sistemas
 
-Vendedor (empleado de la tienda)
+Administrador (Dueño de la tienda)
 
+Vendedor (Empleado)
 
-Registra las ventas realizadas en caja.
+Cliente (opcional a futuro)
 
-
-Consulta el stock y categorías de productos.
-
-
-Genera boletas simples al cliente.,
-No puede modificar productos ni reportes.
-
-
-(Opcional a futuro)
-Cliente
-
-
-Podría consultar productos y precios desde una interfaz sencilla.
-
-
-Podría revisar promociones y realizar pedidos en línea.
-
-
-Este perfil queda fuera del MVP inicial, pero se considera para versiones posteriores.
-
-
-3.-Tipos de usuarios y perfiles
+# 3.-Tipos de usuarios y perfiles
 
 🛠️ Administrador (Dueño de la tienda)
 Registrar, editar y eliminar productos.
@@ -104,7 +100,7 @@ Realizar pedidos en línea (para versiones futuras).
 
 
 
-4.-Funciones indispensable en cada perfil
+# 4.-Funciones indispensable en cada perfil
 
 Administrador (Dueño de la tienda)
 
@@ -153,24 +149,68 @@ Revisar promociones o descuentos.
 
 Realizar pedidos en línea.
 
-5.-Datos básicos a registrar
 
-Producto: nombre, categoría, precio de compra, precio de venta, stock, stock mínimo, proveedor.
+# 5.-Datos básicos a registrar
 
-Venta: fecha, total, vendedor responsable, detalle de productos (producto, cantidad, precio unitario).
+🛒 Producto
 
-Proveedor: nombre, teléfono, correo electrónico, persona de contacto.
+Nombre del producto
 
-Usuario: nombre de usuario, contraseña (encriptada), rol (Administrador / Vendedor).
+Categoría (ej.: abarrotes secos, bebidas, aseo, etc.)
 
-Detalle de los productos vendidos (producto, cantidad, precio unitario)
+Precio de compra
+
+Precio de venta
+
+Stock disponible
+
+Stock mínimo (alerta de inventario bajo)
+
+Proveedor asociado (opcional)
 
 
+🧾 Venta
+
+ID de la venta
+
+Fecha de la venta
+
+Total de la venta
+
+Vendedor responsable (usuario del sistema)
+
+Detalle de los productos vendidos:
+
+Producto
+
+Cantidad
+
+Precio unitario
+
+
+🚚 Proveedor
+
+Nombre del proveedor
+
+Teléfono
+
+Correo electrónico
+
+Persona de contacto
+
+
+👤 Usuario (Administrador / Vendedor)
+
+Nombre de usuario
+
+Contraseña (encriptada para seguridad)
+
+Rol asignado (Administrador o Vendedor)
 
 Rol (Administrador / Vendedor)
 
 
-MVP – ABARROTECH
+# 5.-MVP – ABARROTECH
 Para la primera versión del sistema se implementará lo mínimo indispensable:
 Registrar productos con stock y categorías.
 
@@ -183,6 +223,6 @@ Consultar un reporte simple de ventas del día.
 
 Acceso diferenciado por rol: Administrador y Vendedor
 
-6. Conclusión
+# 7.- Conclusión
 
 En base al levantamiento de requerimientos, se determinó que el sistema para ABARROTECH se implementará como una API REST utilizando Express.js en conjunto con Mongoose para manejar la persistencia en MongoDB. Además, se incorporará Redis como motor de caché para optimizar consultas frecuentes. El proyecto será gestionado bajo la metodología de GitFlow y se desplegará en contenedores mediante Docker Compose, dejando la API disponible en http://localhost:3000.
