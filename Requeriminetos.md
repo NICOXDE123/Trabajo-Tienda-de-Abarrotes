@@ -8,7 +8,6 @@ Este documento detalla los requerimientos levantados, que servirán como base pa
 
 
 
-
 # 2.-Problemática:
 
 El dueño de la tienda ABARROTECH no cuenta con una base de datos para registrar los productos adquiridos ni las ventas realizadas. Esto provoca:
@@ -24,6 +23,7 @@ Pérdida de información y duplicación de registros.
 -Sin control diferenciado de usuarios (dueño y empleados con el mismo nivel de acceso).
 
 -Carencia de alertas sobre productos próximos a agotarse o vencer.
+
 
 # 3. Objetivos del sistema
 
@@ -42,7 +42,7 @@ Clasificar productos en categorías.
 
 Definir roles con diferentes niveles de acceso (administrador y vendedor).
 
-# 2.-Usuarios del sistemas
+# 4.-Usuarios del sistemas
 
 Administrador (Dueño de la tienda)
 
@@ -50,7 +50,7 @@ Vendedor (Empleado)
 
 Cliente (opcional a futuro)
 
-# 3.-Tipos de usuarios y perfiles
+# 5.-Tipos de usuarios y perfiles
 
 🛠️ Administrador (Dueño de la tienda)
 Registrar, editar y eliminar productos.
@@ -100,7 +100,7 @@ Realizar pedidos en línea (para versiones futuras).
 
 
 
-# 4.-Funciones indispensable en cada perfil
+# 6.-Funciones indispensable en cada perfil
 
 Administrador (Dueño de la tienda)
 
@@ -150,67 +150,18 @@ Revisar promociones o descuentos.
 Realizar pedidos en línea.
 
 
-# 5.-Datos básicos a registrar
+# 7.-Datos básicos a registrar
 
-🛒 Producto
+Producto: Nombre del producto, Categoría (ej.: abarrotes secos, bebidas, aseo, etc.), Precio de compra, Precio de venta, Stock disponible, Stock mínimo (alerta), Proveedor asociado (opcional).
 
-Nombre del producto
+Venta: ID de la venta, Fecha de la venta, Total de la venta, Vendedor responsable (usuario del sistema), Detalle de los productos vendidos (Producto, Cantidad, Precio unitario).
 
-Categoría (ej.: abarrotes secos, bebidas, aseo, etc.)
+Proveedor: Nombre del proveedor, Teléfono, Correo electrónico, Persona de contacto.
 
-Precio de compra
-
-Precio de venta
-
-Stock disponible
-
-Stock mínimo (alerta de inventario bajo)
-
-Proveedor asociado (opcional)
+Usuario (Administrador / Vendedor): Nombre de usuario, Contraseña (encriptada para seguridad), Rol asignado (Administrador o Vendedor).
 
 
-🧾 Venta
-
-ID de la venta
-
-Fecha de la venta
-
-Total de la venta
-
-Vendedor responsable (usuario del sistema)
-
-Detalle de los productos vendidos:
-
-Producto
-
-Cantidad
-
-Precio unitario
-
-
-🚚 Proveedor
-
-Nombre del proveedor
-
-Teléfono
-
-Correo electrónico
-
-Persona de contacto
-
-
-👤 Usuario (Administrador / Vendedor)
-
-Nombre de usuario
-
-Contraseña (encriptada para seguridad)
-
-Rol asignado (Administrador o Vendedor)
-
-Rol (Administrador / Vendedor)
-
-
-# 5.-MVP – ABARROTECH
+# 8.-MVP – ABARROTECH
 Para la primera versión del sistema se implementará lo mínimo indispensable:
 Registrar productos con stock y categorías.
 
@@ -223,6 +174,6 @@ Consultar un reporte simple de ventas del día.
 
 Acceso diferenciado por rol: Administrador y Vendedor
 
-# 7.- Conclusión
+# 9.- Conclusión
 
 En base al levantamiento de requerimientos, se determinó que el sistema para ABARROTECH se implementará como una API REST utilizando Express.js en conjunto con Mongoose para manejar la persistencia en MongoDB. Además, se incorporará Redis como motor de caché para optimizar consultas frecuentes. El proyecto será gestionado bajo la metodología de GitFlow y se desplegará en contenedores mediante Docker Compose, dejando la API disponible en http://localhost:3000.
