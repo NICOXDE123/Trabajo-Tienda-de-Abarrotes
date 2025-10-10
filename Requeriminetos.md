@@ -276,7 +276,7 @@ La primera versión funcional del sistema (API REST) estará disponible en aprox
 # 2. Costos de desarrollo
 
 
-/*
+
 ===========================================================
                   ESTIMACIÓN DE COSTOS
 ===========================================================
@@ -309,7 +309,7 @@ desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
      atractivo y funcional para todos los roles de usuario.
 
 ===========================================================
-*/
+
 
 # 3. Infraestructura y Licencias
 
