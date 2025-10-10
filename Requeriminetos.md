@@ -1,4 +1,4 @@
-## Introducción ##
+## Introducción 
 
 
 El proyecto ABARROTECH consiste en el desarrollo de un sistema de gestión para una tienda de abarrotes, con el objetivo de mejorar la eficiencia en la gestión de productos, ventas y control de inventarios. Actualmente, la tienda opera de manera manual, utilizando registros en papel o hojas de cálculo, lo que ha generado problemas como duplicación de datos, pérdida de información, y dificultades para controlar el stock de productos.
@@ -12,7 +12,7 @@ El sistema también tiene en cuenta la escalabilidad, permitiendo futuras mejora
 
 
 
-### 1. Problema de negocio ### 
+### 1. Problema de negocio 
 
 
 El dueño de la tienda ABARROTECH no cuenta con una base de datos centralizada para registrar los productos adquiridos, las ventas realizadas ni el control de stock. Esto provoca:
@@ -30,7 +30,7 @@ El dueño de la tienda ABARROTECH no cuenta con una base de datos centralizada p
 -- Falta de reportes confiables sobre ingresos y ventas, lo que afecta la toma de decisiones.
 
 
-### 2. Usuarios del sistema ###
+### 2. Usuarios del sistema 
 
 
 -- Administrador (El equipo de desarrollo)
@@ -45,7 +45,7 @@ Registra ventas diarias, consulta el stock de productos, y genera boletas simple
 Consultaría productos y precios desde una interfaz sencilla, revisaría promociones y realizaría pedidos en línea. Este perfil se implementará en versiones futuras.
 
 
-### 3. Funciones necesarias (MVP) ###
+### 3. Funciones necesarias (MVP) 
 
 
 -- Para la primera versión del sistema se implementará lo mínimo indispensable:
@@ -63,7 +63,7 @@ Consultaría productos y precios desde una interfaz sencilla, revisaría promoci
 -- Acceso diferenciado por rol: Administrador (completo) y Vendedor (limitado).
 
 
-### 4. Datos a almacenar ###
+### 4. Datos a almacenar 
 
 
 Producto:
@@ -135,7 +135,7 @@ Proveedor:
 --Rol asignado (Administrador o Vendedor)
 
 
-###  5. Reglas de negocio ##
+###  5. Reglas de negocio 
 
 
 ** Reserva de productos : Un producto reservado no puede ser vendido a terceros hasta que expire la reserva. **
@@ -150,7 +150,7 @@ Proveedor:
 Trazabilidad de productos: Debe existir trazabilidad para identificar de qué vehículo o lote proviene cada producto (en el futuro, si se agrega).
 
 
-### 6. Prioridades ###
+### 6. Prioridades 
 
 
 Alta prioridad:
@@ -189,7 +189,7 @@ Baja prioridad:
 -- Promociones o descuentos
 
 
-### 7. Flujos principales ###
+### 7. Flujos principales
 
 
 Ingreso de productos
@@ -216,7 +216,7 @@ Consultas de stock y productos
 -- Los vendedores consultan el stock disponible y la categoría de los productos.
 
 
-### 8. Requisitos no funcionales ###
+### 8. Requisitos no funcionales 
 
 
 Accesos multiusuario: Gestión de usuarios con diferentes roles (Administrador, Vendedor).
@@ -249,13 +249,13 @@ Rendimiento:
 -- Debe soportar múltiples usuarios simultáneos sin caída de rendimiento.
 
 
-### 9. Plazos ###
+### 9. Plazos 
 
 
 La primera versión funcional del sistema (API REST) estará disponible en aproximadamente 4 semanas desde la aprobación del alcance y el pago inicial. La entrega está sujeta a ajustes de disponibilidad y revisiones durante el desarrollo.
 
 
-### 10. Presupuesto Estimado para el Sistema ABARROTECH ###
+### 10. Presupuesto Estimado para el Sistema ABARROTECH
 
 
 1. Tiempo de desarrollo estimado
@@ -324,7 +324,7 @@ $240,000 - $600,000 CLP
 Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones al sistema.
 
 
-### 11. Próximos pasos ###
+### 11. Próximos pasos 
 
 
 -- Confirmación de este documento con el alcance acordado (API-only).
@@ -342,7 +342,7 @@ Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones 
 -- Inicio del desarrollo conforme al cronograma acordado.
 
 
-### 12. Criterios de aceptación y garantías ###
+### 12. Criterios de aceptación y garantías 
 
 
 -- Entrega de documentación completa de la API (endpoints, esquemas de MongoDB).
