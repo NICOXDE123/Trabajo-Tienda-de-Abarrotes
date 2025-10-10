@@ -319,9 +319,10 @@ Presupuesto del proyecto        | Incluye desarrollo, diseño, pruebas y entrega
 Si se requiere soporte técnico o mantenimiento mensual del sistema después de la entrega:
 
 
-Costo mensual de mantenimiento y soporte:
-$240,000 - $600,000 CLP
-Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones al sistema.
+Concepto                             | Detalle                                                                                               | Costo estimado mensual (CLP)
+------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------
+Mantenimiento y soporte             | Cubre corrección de errores, pequeñas mejoras y actualizaciones al sistema.                           | $240,000 - $600,000
+
 
 
 ### 11. Próximos pasos 
