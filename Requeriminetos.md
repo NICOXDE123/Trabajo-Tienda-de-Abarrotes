@@ -281,28 +281,26 @@ solicitadas. Los valores propuestos se basan en las tarifas de
 desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
 
 1. Desarrollo Backend (Node.js + MongoDB + Redis):
-   - Costo estimado: $2,000,000 - $4,000,000 CLP
-   - Incluye: Implementación de la lógica del sistema, integración 
+ - Costo estimado: $2,000,000 - $4,000,000 CLP
+ - Incluye: Implementación de la lógica del sistema, integración 
      con bases de datos MongoDB y Redis, y funcionalidades de control 
      de inventario, alertas de vencimiento y organización de productos.
-   - Nota: El costo varía según la complejidad de las funciones 
+ - Nota: El costo varía según la complejidad de las funciones 
      requeridas y la integración con los sistemas existentes.
 
 2. Desarrollo Frontend (Interfaz para vendedores):
-   - Costo estimado: $800,000 - $2,000,000 CLP
-   - Incluye: Creación de una interfaz intuitiva para que los vendedores 
+ - Costo estimado: $800,000 - $2,000,000 CLP
+ - Incluye: Creación de una interfaz intuitiva para que los vendedores 
      puedan consultar stock, registrar ventas y gestionar productos.
-   - Nota: El rango de precio depende de la complejidad del diseño 
+ - Nota: El rango de precio depende de la complejidad del diseño 
      y las funcionalidades requeridas.
 
 3. Diseño UI/UX:
-   - Costo estimado: $480,000 - $1,200,000 CLP
-   - Incluye: Diseño de la interfaz, estructura visual, experiencia 
+ - Costo estimado: $480,000 - $1,200,000 CLP
+ - Incluye: Diseño de la interfaz, estructura visual, experiencia 
      de usuario y adaptación a futuras mejoras, como la aplicación de ventas.
-   - Nota: Este costo asegura que el sistema sea fácil de usar, 
+ - Nota: Este costo asegura que el sistema sea fácil de usar, 
      atractivo y funcional para todos los roles de usuario.
-
-
 
 # 3. Infraestructura y Licencias
 
