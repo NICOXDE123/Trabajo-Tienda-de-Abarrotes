@@ -302,7 +302,6 @@ desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
    - Nota: Este costo asegura que el sistema sea fácil de usar, 
      atractivo y funcional para todos los roles de usuario.
 
-===========================================================
 
 
 # 3. Infraestructura y Licencias
