@@ -48,19 +48,19 @@ Consultaría productos y precios desde una interfaz sencilla, revisaría promoci
 ### 3. Funciones necesarias (MVP)
 
 
-Para la primera versión del sistema se implementará lo mínimo indispensable:
+-- Para la primera versión del sistema se implementará lo mínimo indispensable:
 
 
-Registrar productos con stock y categorías.
+-- Registrar productos con stock y categorías.
 
 
-Registrar ventas y descontar automáticamente del inventario.
+-- Registrar ventas y descontar automáticamente del inventario.
 
 
-Consultar reportes simples de ventas del día.
+-- Consultar reportes simples de ventas del día.
 
 
-Acceso diferenciado por rol: Administrador (completo) y Vendedor (limitado).
+-- Acceso diferenciado por rol: Administrador (completo) y Vendedor (limitado).
 
 
 ## 4. Datos a almacenar
@@ -216,7 +216,7 @@ Consultas de stock y productos
 -- Los vendedores consultan el stock disponible y la categoría de los productos.
 
 
-8. Requisitos no funcionales
+## 8. Requisitos no funcionales
 
 
 Accesos multiusuario: Gestión de usuarios con diferentes roles (Administrador, Vendedor).
@@ -249,49 +249,49 @@ Rendimiento:
 -- Debe soportar múltiples usuarios simultáneos sin caída de rendimiento.
 
 
-9. Plazos
+## 9. Plazos
 
 
 La primera versión funcional del sistema (API REST) estará disponible en aproximadamente 4 semanas desde la aprobación del alcance y el pago inicial. La entrega está sujeta a ajustes de disponibilidad y revisiones durante el desarrollo.
 
 
-10. Presupuesto Estimado para el Sistema ABARROTECH
+## 10. Presupuesto Estimado para el Sistema ABARROTECH
 
 
 1. Tiempo de desarrollo estimado
 
 
-Fase 1: Requerimientos y Diseño Funcional: 1-2 semanas
+** Fase 1 ** : Requerimientos y Diseño Funcional: 1-2 semanas
 
 
-Fase 2: Desarrollo del MVP (mínimo producto viable): 4-6 semanas
+** Fase 2 ** : Desarrollo del MVP (mínimo producto viable): 4-6 semanas
 
 
-Fase 3: Pruebas y Ajustes Finales: 1-2 semanas
+** Fase 3 ** : Pruebas y Ajustes Finales: 1-2 semanas
 
 
-Total estimado: 6-8 semanas de trabajo
+** Total estimado ** : 6-8 semanas de trabajo
 
 
-2. Costos de desarrollo
+# 2. Costos de desarrollo
 
 
 Para este proyecto, el costo total estimado de desarrollo dependerá de las horas de trabajo y el alcance de las funcionalidades solicitadas. El precio propuesto se basa en las tarifas de desarrollo en Chile y el tiempo estimado de trabajo.
 
 
-Desarrollo Backend (Node.js + MongoDB + Redis):
+--- Desarrollo Backend (Node.js + MongoDB + Redis):
 Costo estimado: $2,000,000 - $4,000,000 CLP (dependiendo de la complejidad de las funciones y de la integración de MongoDB y Redis).
 
 
-Desarrollo Frontend (Interfaz para los vendedores):
+--- Desarrollo Frontend (Interfaz para los vendedores):
 Costo estimado: $800,000 - $2,000,000 CLP (si es necesario crear una interfaz de usuario para los vendedores).
 
 
-Diseño UI/UX:
+--- Diseño UI/UX:
 Costo estimado: $480,000 - $1,200,000 CLP (diseño de la interfaz, estructura y experiencia del usuario).
 
 
-3. Infraestructura y Licencias
+# 3. Infraestructura y Licencias
 
 
 Infraestructura (servidores, MongoDB, Redis, etc.):
@@ -302,7 +302,7 @@ Licencias y herramientas adicionales (si aplica):
 Costo estimado: $30,000 - $100,000 CLP (dependiendo de herramientas como GitHub Pro, servicios de integración continua, etc.).
 
 
-4. Costo Total Estimado del Proyecto
+# 4. Costo Total Estimado del Proyecto
 
 
 El costo total estimado para desarrollar el sistema ABARROTECH será de:
@@ -313,7 +313,7 @@ Este presupuesto incluye las fases de desarrollo, diseño, pruebas, y entrega de
 El precio final puede ajustarse en función de nuevas funcionalidades o cambios de alcance.
 
 
-5. Mantenimiento Post-Lanzamiento (Opcional)
+# 5. Mantenimiento Post-Lanzamiento (Opcional)
 
 
 Si se requiere soporte técnico o mantenimiento mensual del sistema después de la entrega:
@@ -324,33 +324,30 @@ $240,000 - $600,000 CLP
 Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones al sistema.
 
 
-11. Próximos pasos
+### 11. Próximos pasos
 
 
-Confirmación de este documento con el alcance acordado (API-only).
+-- Confirmación de este documento con el alcance acordado (API-only).
 
 
-Workshop técnico para definir endpoints, esquemas en MongoDB y reglas críticas.
+-- Workshop técnico para definir endpoints, esquemas en MongoDB y reglas críticas.
 
 
-Entrega del documento de alcance técnico y cotización formal.
+-- Entrega del documento de alcance técnico y cotización formal.
 
 
-Firma del contrato y orden de trabajo.
+-- Firma del contrato y orden de trabajo.
 
 
-Inicio del desarrollo conforme al cronograma acordado.
+-- Inicio del desarrollo conforme al cronograma acordado.
 
 
+### 12. Criterios de aceptación y garantías
 
 
-12. Criterios de aceptación y garantías
+-- Entrega de documentación completa de la API (endpoints, esquemas de MongoDB).
 
 
-Entrega de documentación completa de la API (endpoints, esquemas de MongoDB).
+-- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
 
-
-Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
-
-
-Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras).
+-- Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras).
