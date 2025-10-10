@@ -294,12 +294,11 @@ Costo estimado: $480,000 - $1,200,000 CLP (diseño de la interfaz, estructura y 
 # 3. Infraestructura y Licencias
 
 
-Infraestructura (servidores, MongoDB, Redis, etc.):
-Costo mensual: $60,000 - $200,000 CLP (dependiendo del servicio de hosting y la configuración de la infraestructura).
+Concepto                                      | Detalle                                                                                         | Costo estimado mensual (CLP)
+---------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------------------
+Infraestructura                               | Servidores, MongoDB, Redis, etc.                                                                | $60,000 - $200,000
+Licencias y herramientas adicionales (si aplica) | GitHub Pro, servicios de integración continua, otras herramientas de desarrollo                 | $30,000 - $100,000
 
-
-Licencias y herramientas adicionales (si aplica):
-Costo estimado: $30,000 - $100,000 CLP (dependiendo de herramientas como GitHub Pro, servicios de integración continua, etc.).
 
 
 # 4. Costo Total Estimado del Proyecto
