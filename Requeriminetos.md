@@ -275,6 +275,7 @@ La primera versión funcional del sistema (API REST) estará disponible en aprox
 
 # 2. Costos de desarrollo
 
+
 El costo total estimado para el desarrollo del proyecto dependerá 
 del número de horas de trabajo y del alcance de las funcionalidades 
 solicitadas. Los valores propuestos se basan en las tarifas de 
@@ -301,6 +302,8 @@ desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
      de usuario y adaptación a futuras mejoras, como la aplicación de ventas.
    - Nota: Este costo asegura que el sistema sea fácil de usar, 
      atractivo y funcional para todos los roles de usuario.
+
+
 
 # 3. Infraestructura y Licencias
 
