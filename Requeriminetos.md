@@ -307,9 +307,10 @@ Licencias y herramientas adicionales (si aplica) | GitHub Pro, servicios de inte
 El costo total estimado para desarrollar el sistema ABARROTECH será de:
 
 
-$4,000,000 CLP - $6,400,000 CLP
-Este presupuesto incluye las fases de desarrollo, diseño, pruebas, y entrega del sistema.
-El precio final puede ajustarse en función de nuevas funcionalidades o cambios de alcance.
+Concepto                         | Detalle                                                                                                     | Costo estimado (CLP)
+--------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------
+Presupuesto del proyecto        | Incluye desarrollo, diseño, pruebas y entrega del sistema. Puede ajustarse según cambios de alcance.        | $4.000.000 - $6.400.000
+
 
 
 # 5. Mantenimiento Post-Lanzamiento (Opcional)
