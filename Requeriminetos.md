@@ -21,7 +21,7 @@ El dueño de la tienda ABARROTECH no cuenta con una base de datos centralizada p
 -- Pérdida de información y duplicación de registros.
 
 
---Dificultad para llevar control del stock.
+-- Dificultad para llevar control del stock.
 
 
 -- Imposibilidad de ordenar los productos por categorías (ejemplo: abarrotes secos, bebidas, aseo, etc.).
@@ -132,7 +132,7 @@ Proveedor:
 -- Contraseña (encriptada)
 
 
---Rol asignado (Administrador o Vendedor)
+-- Rol asignado (Administrador o Vendedor)
 
 
 ###  5. Reglas de negocio 
@@ -346,7 +346,6 @@ Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones 
 
 
 -- Entrega de documentación completa de la API (endpoints, esquemas de MongoDB).
-
 
 -- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
 
