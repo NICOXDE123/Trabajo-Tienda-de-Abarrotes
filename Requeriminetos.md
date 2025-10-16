@@ -2,46 +2,42 @@
                 PROYECTO: ABARROTECH
 ===========================================================
 
-### 1. Introducción / Descripción general
+## 1. Introducción
 
-El proyecto ABARROTECH consiste en el desarrollo de un sistema integral 
-de gestión para una tienda de abarrotes, con el objetivo de optimizar 
-la eficiencia en la administración de productos, el control de inventarios 
-y la organización general del negocio.
+El proyecto **ABARROTECH** nace como una iniciativa orientada a mejorar la gestión de una pequeña tienda de abarrotes local que, como muchas otras, enfrenta dificultades al mantener sus registros de forma manual.  
+Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los productos en stock y los pedidos a proveedores, lo que ha generado problemas como la pérdida de información, errores de cálculo, duplicación de datos y falta de control sobre el inventario disponible.  
 
-Situación actual:
-Actualmente, la tienda opera de manera manual, utilizando registros en 
-papel o planillas, lo que genera problemas como duplicación de datos, 
-pérdida de información y dificultades para mantener un control preciso 
-del stock.
+Estas limitaciones no solo afectan la eficiencia del negocio, sino también la capacidad del dueño para tomar decisiones informadas sobre las compras o la reposición de productos. Frente a esta situación, surge la necesidad de contar con una herramienta tecnológica que centralice la información, automatice tareas repetitivas y ofrezca un control más preciso de las operaciones diarias.  
 
-# 2. Funcionalidades principales
-- Registro y gestión automatizada de productos.
-- Control de inventario en tiempo real.
-- Sistema de alertas para productos próximos a agotarse o caducar.
-- Organización de productos por categoría, proveedor y ubicación.
-- Roles de usuario diferenciados (Administrador / Vendedor).
+---
 
-# 3. Roles de usuario
-- Administrador:
-  * Acceso completo al sistema.
-  * Gestión de usuarios, productos, stock y reportes.
+## 2. Problemática
 
-- Vendedor:
-  * Permiso para consultar información y registrar movimientos de inventario.
+El dueño de la tienda **ABARROTECH** no cuenta con una base de datos ni un sistema digital para registrar los productos adquiridos ni las ventas realizadas.  
+Esta situación provoca diversas dificultades, entre ellas:
 
-# 4. Escalabilidad y futuro
-ABARROTECH ha sido diseñado con una arquitectura escalable, permitiendo 
-la incorporación de nuevas funciones. En futuras versiones, se integrará 
-una aplicación de ventas conectada a la base de datos principal, 
-facilitando la gestión de pedidos en línea, clientes y reportes de 
-rendimiento comercial.
+- Pérdida de información y duplicación de registros.  
+- Dificultad para llevar un control del stock disponible.  
+- Imposibilidad de ordenar los productos por categorías (por ejemplo: abarrotes secos, bebidas, aseo, etc.).  
+- Falta de reportes confiables sobre ingresos y ventas.  
+- Ausencia de control diferenciado de usuarios (el dueño y los empleados tienen el mismo nivel de acceso).  
+- Carencia de alertas sobre productos próximos a agotarse o vencer.  
 
-# 5. Objetivo final
-Crear una plataforma completa que permita optimizar la gestión, 
-organización y control de productos, mejorando la eficiencia del negocio 
-y reduciendo pérdidas por caducidad o errores humanos.
+---
 
+## 3. Objetivos del Sistema
+
+### 🎯 Objetivo general
+Implementar un sistema de gestión para **ABARROTECH** que permita digitalizar el registro de productos, ventas y reportes, mejorando la eficiencia, el control del inventario y la toma de decisiones.  
+
+### 🔹 Objetivos específicos
+- Automatizar el registro y control de productos.  
+- Reducir la pérdida de información mediante una base de datos centralizada.  
+- Generar reportes de ventas y stock en tiempo real.  
+- Establecer roles de usuario con diferentes niveles de acceso.  
+- Incorporar alertas automáticas para productos con bajo stock o próximos a vencer.  
+
+---
 
 ### 2. Usuarios del sistema 
 
