@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ===========================================================
                 PROYECTO: ABARROTECH
 ==========================================================
@@ -159,3 +160,5 @@ Proveedor:
 Trazabilidad de productos: Debe existir trazabilidad para identificar de qué vehículo o lote proviene cada producto (en el futuro, si se agrega).
 
 
+=======
+>>>>>>> develop
