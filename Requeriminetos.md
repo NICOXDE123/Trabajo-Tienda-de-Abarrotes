@@ -162,7 +162,7 @@ Trazabilidad de productos: Debe existir trazabilidad para identificar de qué ve
 
 =======
 
-<<<<<<< HEAD
+
 
 Alta prioridad:
 
@@ -354,14 +354,3 @@ Mantenimiento y soporte             | Cubre corrección de errores, pequeñas me
 -- Inicio del desarrollo conforme al cronograma acordado.
 
 
-### 12. Criterios de aceptación y garantías 
-
-
--- Entrega de documentación completa de la API (endpoints, esquemas de MongoDB).
-
-
--- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
-
--- Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras).
-=======
->>>>>>> develop
