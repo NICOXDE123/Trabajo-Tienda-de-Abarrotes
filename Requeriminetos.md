@@ -1,34 +1,44 @@
-## Introducción 
 
+===========================================================
+                PROYECTO: ABARROTECH
+==========================================================
 
-El proyecto ABARROTECH consiste en el desarrollo de un sistema de gestión para una tienda de abarrotes, con el objetivo de mejorar la eficiencia en la gestión de productos, ventas y control de inventarios. Actualmente, la tienda opera de manera manual, utilizando registros en papel o hojas de cálculo, lo que ha generado problemas como duplicación de datos, pérdida de información, y dificultades para controlar el stock de productos.
+## 1. Introducción
 
+El proyecto **ABARROTECH** nace como una iniciativa orientada a mejorar la gestión de una pequeña tienda de abarrotes local que, como muchas otras, enfrenta dificultades al mantener sus registros de forma manual.  
+Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los productos en stock y los pedidos a proveedores, lo que ha generado problemas como la pérdida de información, errores de cálculo, duplicación de datos y falta de control sobre el inventario disponible.  
 
-Este sistema permitirá a los administradores y vendedores registrar productos, realizar ventas y gestionar el inventario de manera automática, asegurando una mayor precisión en los registros y mejorando la toma de decisiones a través de reportes de ventas. Además, se implementará un sistema de roles para controlar el acceso a las distintas funciones del sistema, diferenciando las tareas del administrador (quien tendrá acceso completo) y el vendedor (quien podrá registrar ventas y consultar stock).
+Estas limitaciones no solo afectan la eficiencia del negocio, sino también la capacidad del dueño para tomar decisiones informadas sobre las compras o la reposición de productos. Frente a esta situación, surge la necesidad de contar con una herramienta tecnológica que centralice la información, automatice tareas repetitivas y ofrezca un control más preciso de las operaciones diarias.  
 
+---
 
-El sistema también tiene en cuenta la escalabilidad, permitiendo futuras mejoras como la incorporación de pedidos en línea y gestión de clientes, lo cual se implementará en versiones posteriores del sistema.
+## 2. Problemática
 
+El dueño de la tienda **ABARROTECH** no cuenta con una base de datos ni un sistema digital para registrar los productos adquiridos ni las ventas realizadas.  
+Esta situación provoca diversas dificultades, entre ellas:
 
+- Pérdida de información y duplicación de registros.  
+- Dificultad para llevar un control del stock disponible.  
+- Imposibilidad de ordenar los productos por categorías (por ejemplo: abarrotes secos, bebidas, aseo, etc.).  
+- Falta de reportes confiables sobre ingresos y ventas.  
+- Ausencia de control diferenciado de usuarios (el dueño y los empleados tienen el mismo nivel de acceso).  
+- Carencia de alertas sobre productos próximos a agotarse o vencer.  
 
+---
 
-### 1. Problema de negocio 
+## 3. Objetivos del Sistema
 
+### Objetivo general
+Implementar un sistema de gestión para **ABARROTECH** que permita digitalizar el registro de productos, ventas y reportes, mejorando la eficiencia, el control del inventario y la toma de decisiones.  
 
-El dueño de la tienda ABARROTECH no cuenta con una base de datos centralizada para registrar los productos adquiridos, las ventas realizadas ni el control de stock. Esto provoca:
+### Objetivos específicos
+- Automatizar el registro y control de productos.  
+- Reducir la pérdida de información mediante una base de datos centralizada.  
+- Generar reportes de ventas y stock en tiempo real.  
+- Establecer roles de usuario con diferentes niveles de acceso.  
+- Incorporar alertas automáticas para productos con bajo stock o próximos a vencer.  
 
-
--- Pérdida de información y duplicación de registros.
-
-
---Dificultad para llevar control del stock.
-
-
--- Imposibilidad de ordenar los productos por categorías (ejemplo: abarrotes secos, bebidas, aseo, etc.).
-
-
--- Falta de reportes confiables sobre ingresos y ventas, lo que afecta la toma de decisiones.
-
+---
 
 ### 2. Usuarios del sistema 
 
@@ -132,7 +142,7 @@ Proveedor:
 -- Contraseña (encriptada)
 
 
---Rol asignado (Administrador o Vendedor)
+-- Rol asignado (Administrador o Vendedor)
 
 
 ###  5. Reglas de negocio 
@@ -150,8 +160,9 @@ Proveedor:
 Trazabilidad de productos: Debe existir trazabilidad para identificar de qué vehículo o lote proviene cada producto (en el futuro, si se agrega).
 
 
-### 6. Prioridades 
+=======
 
+<<<<<<< HEAD
 
 Alta prioridad:
 
@@ -308,12 +319,11 @@ desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
 # 3. Infraestructura y Licencias
 
 
-Infraestructura (servidores, MongoDB, Redis, etc.):
-Costo mensual: $60,000 - $200,000 CLP (dependiendo del servicio de hosting y la configuración de la infraestructura).
+Concepto                                      | Detalle                                                                                         | Costo estimado mensual (CLP)
+---------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------------------
+Infraestructura                               | Servidores, MongoDB, Redis, etc.                                                                | $60,000 - $200,000
+Licencias y herramientas adicionales (si aplica) | GitHub Pro, servicios de integración continua, otras herramientas de desarrollo                 | $30,000 - $100,000
 
-
-Licencias y herramientas adicionales (si aplica):
-Costo estimado: $30,000 - $100,000 CLP (dependiendo de herramientas como GitHub Pro, servicios de integración continua, etc.).
 
 
 # 4. Costo Total Estimado del Proyecto
@@ -322,9 +332,10 @@ Costo estimado: $30,000 - $100,000 CLP (dependiendo de herramientas como GitHub 
 El costo total estimado para desarrollar el sistema ABARROTECH será de:
 
 
-$4,000,000 CLP - $6,400,000 CLP
-Este presupuesto incluye las fases de desarrollo, diseño, pruebas, y entrega del sistema.
-El precio final puede ajustarse en función de nuevas funcionalidades o cambios de alcance.
+Concepto                         | Detalle                                                                                                     | Costo estimado (CLP)
+--------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------
+Presupuesto del proyecto        | Incluye desarrollo, diseño, pruebas y entrega del sistema. Puede ajustarse según cambios de alcance.        | $4.000.000 - $6.400.000
+
 
 
 # 5. Mantenimiento Post-Lanzamiento (Opcional)
@@ -333,9 +344,10 @@ El precio final puede ajustarse en función de nuevas funcionalidades o cambios 
 Si se requiere soporte técnico o mantenimiento mensual del sistema después de la entrega:
 
 
-Costo mensual de mantenimiento y soporte:
-$240,000 - $600,000 CLP
-Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones al sistema.
+Concepto                             | Detalle                                                                                               | Costo estimado mensual (CLP)
+------------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------
+Mantenimiento y soporte             | Cubre corrección de errores, pequeñas mejoras y actualizaciones al sistema.                           | $240,000 - $600,000
+
 
 
 ### 11. Próximos pasos 
@@ -365,3 +377,5 @@ Este costo cubre la corrección de errores, pequeñas mejoras y actualizaciones 
 -- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
 
 -- Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras).
+=======
+>>>>>>> develop
