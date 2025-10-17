@@ -287,19 +287,33 @@ La primera versión funcional del sistema (API REST) estará disponible en aprox
 # 2. Costos de desarrollo
 
 
-Para este proyecto, el costo total estimado de desarrollo dependerá de las horas de trabajo y el alcance de las funcionalidades solicitadas. El precio propuesto se basa en las tarifas de desarrollo en Chile y el tiempo estimado de trabajo.
+El costo total estimado para el desarrollo del proyecto dependerá 
+del número de horas de trabajo y del alcance de las funcionalidades 
+solicitadas. Los valores propuestos se basan en las tarifas de 
+desarrollo actuales en Chile y en el tiempo aproximado de trabajo.
 
+1. Desarrollo Backend (Node.js + MongoDB + Redis):
+   - Costo estimado: $2,000,000 - $4,000,000 CLP
+   - Incluye: Implementación de la lógica del sistema, integración 
+     con bases de datos MongoDB y Redis, y funcionalidades de control 
+     de inventario, alertas de vencimiento y organización de productos.
+   - Nota: El costo varía según la complejidad de las funciones 
+     requeridas y la integración con los sistemas existentes.
 
---- Desarrollo Backend (Node.js + MongoDB + Redis):
-Costo estimado: $2,000,000 - $4,000,000 CLP (dependiendo de la complejidad de las funciones y de la integración de MongoDB y Redis).
+2. Desarrollo Frontend (Interfaz para vendedores):
+   - Costo estimado: $800,000 - $2,000,000 CLP
+   - Incluye: Creación de una interfaz intuitiva para que los vendedores 
+     puedan consultar stock, registrar ventas y gestionar productos.
+   - Nota: El rango de precio depende de la complejidad del diseño 
+     y las funcionalidades requeridas.
 
+3. Diseño UI/UX:
+   - Costo estimado: $480,000 - $1,200,000 CLP
+   - Incluye: Diseño de la interfaz, estructura visual, experiencia 
+     de usuario y adaptación a futuras mejoras, como la aplicación de ventas.
+   - Nota: Este costo asegura que el sistema sea fácil de usar, 
+     atractivo y funcional para todos los roles de usuario.
 
---- Desarrollo Frontend (Interfaz para los vendedores):
-Costo estimado: $800,000 - $2,000,000 CLP (si es necesario crear una interfaz de usuario para los vendedores).
-
-
---- Diseño UI/UX:
-Costo estimado: $480,000 - $1,200,000 CLP (diseño de la interfaz, estructura y experiencia del usuario).
 
 
 # 3. Infraestructura y Licencias
