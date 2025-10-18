@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ===========================================================
                 PROYECTO: ABARROTECH
 ==========================================================
@@ -161,4 +161,4 @@ Trazabilidad de productos: Debe existir trazabilidad para identificar de qué ve
 
 
 =======
->>>>>>> develop
+
