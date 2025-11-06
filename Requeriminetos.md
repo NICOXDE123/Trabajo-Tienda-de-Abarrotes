@@ -1,6 +1,5 @@
-=============================
+
   PROYECTO: ABARROTECH
-=============================
 
 ## Introduccion:
 
@@ -39,15 +38,15 @@ Por estas razones, resulta fundamental contar con un sistema digital que central
 ## 3. Roles de Usuario
 El sistema contará con distintos perfiles, definidos según sus permisos y funciones:
 
-# Administrador:
+ *Administrador:
 Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, proveedores y generar reportes de ventas.  [Tiene acceso total al sistema. crea, edita y elimina, supervisa todas las operaciones y configuraciones, controla los permisos y roles del resto de usuarios.]  
 
 
-# Vendedor:
+ *Vendedor:
 Posee permisos limitados. Puede registrar ventas, consultar el stock y emitir boletas simples. No puede eliminar ni modificar información crítica.
 
 
-# Cliente (versión futura):
+ *Cliente (versión futura):
 En versiones posteriores, se incluirá un rol de cliente que podrá consultar productos, revisar precios y realizar pedidos en línea.
 
 
@@ -116,29 +115,8 @@ En versiones posteriores, se incluirá un rol de cliente que podrá consultar pr
 
 --Contraseña (encriptada)
 
---Rol
+--Rol asignado (Administrador o Vendedor)
 
-
-
--- Teléfono
-
-
--- Correo electrónico
-
-
--- Persona de contacto
-
-
--- Usuario (Administrador / Vendedor):
-
-
--- Nombre de usuario
-
-
--- Contraseña (encriptada)
-
-
--- Rol asignado (Administrador o Vendedor)
 
 
 ###  5. Reglas de negocio 
