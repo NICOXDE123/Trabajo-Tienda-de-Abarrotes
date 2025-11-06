@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ### 12. Criterios de aceptación y garantías 
 
@@ -13,128 +14,131 @@
 ===========================================================
                 PROYECTO: ABARROTECH
 ==========================================================
+=======
+=============================
+  PROYECTO: ABARROTECH
+=============================
+>>>>>>> feature/requerimientos
 
-## 1. Introducción
 
-El proyecto **ABARROTECH** nace como una iniciativa orientada a mejorar la gestión de una pequeña tienda de abarrotes local que, como muchas otras, enfrenta dificultades al mantener sus registros de forma manual.  
-Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los productos en stock y los pedidos a proveedores, lo que ha generado problemas como la pérdida de información, errores de cálculo, duplicación de datos y falta de control sobre el inventario disponible.  
+## Introduccion:
 
-Estas limitaciones no solo afectan la eficiencia del negocio, sino también la capacidad del dueño para tomar decisiones informadas sobre las compras o la reposición de productos. Frente a esta situación, surge la necesidad de contar con una herramienta tecnológica que centralice la información, automatice tareas repetitivas y ofrezca un control más preciso de las operaciones diarias.  
+El proyecto ABARROTECH nace como una iniciativa orientada a mejorar la gestión de una pequeña tienda de abarrotes local que, como muchas otras, enfrenta dificultades al mantener sus registros de forma manual.
+Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los productos en stock y los pedidos a proveedores, lo que ha generado pérdida de información, errores de cálculo, duplicación de datos y falta de control sobre el inventario disponible.
+Estas limitaciones afectan directamente la eficiencia del negocio y la capacidad del dueño para tomar decisiones informadas.
 
----
+Frente a esta situación, se propone el desarrollo de ABARROTECH, un sistema informático basado en una API RESTful construida con Node.js, Express y MongoDB Community Edition , complementada con Redis para el manejo de sesiones y cache, y Docker para la contenerización del entorno.
+El propósito principal del sistema es centralizar la información, automatizar los procesos de control de inventario y ventas, y ofrecer una herramienta moderna, segura y escalable para la gestión diaria de tiendas de abarrotes.
 
-## 2. Problemática
 
-El dueño de la tienda **ABARROTECH** no cuenta con una base de datos ni un sistema digital para registrar los productos adquiridos ni las ventas realizadas.  
-Esta situación provoca diversas dificultades, entre ellas:
 
-- Pérdida de información y duplicación de registros.  
-- Dificultad para llevar un control del stock disponible.  
-- Imposibilidad de ordenar los productos por categorías (por ejemplo: abarrotes secos, bebidas, aseo, etc.).  
-- Falta de reportes confiables sobre ingresos y ventas.  
-- Ausencia de control diferenciado de usuarios (el dueño y los empleados tienen el mismo nivel de acceso).  
-- Carencia de alertas sobre productos próximos a agotarse o vencer.  
+## 2. Problemática del negocio
+El dueño de la tienda ABARROTECH no cuenta con un sistema digital ni base de datos para registrar sus productos ni las ventas realizadas, lo que genera diversas dificultades:
+Pérdida de información y duplicación de registros.
 
----
 
-## 3. Objetivos del Sistema
+* Dificultad para llevar un control del stock disponible.
 
-### Objetivo general
-Implementar un sistema de gestión para **ABARROTECH** que permita digitalizar el registro de productos, ventas y reportes, mejorando la eficiencia, el control del inventario y la toma de decisiones.  
 
-### Objetivos específicos
-- Automatizar el registro y control de productos.  
-- Reducir la pérdida de información mediante una base de datos centralizada.  
-- Generar reportes de ventas y stock en tiempo real.  
-- Establecer roles de usuario con diferentes niveles de acceso.  
-- Incorporar alertas automáticas para productos con bajo stock o próximos a vencer.  
+* Imposibilidad de organizar productos por categorías.
 
----
 
-### 2. Usuarios del sistema 
+* Falta de reportes confiables sobre ingresos y ventas.
 
 
--- Administrador (El equipo de desarrollo)
-Tiene acceso completo al sistema, pudiendo gestionar usuarios, productos, proveedores, categorías, y generar reportes.
+* Ausencia de control diferenciado de usuarios.
 
 
--- Vendedor (Empleado de la tienda)
-Registra ventas diarias, consulta el stock de productos, y genera boletas simples. No tiene permisos para editar productos, proveedores ni usuarios.
+* Carencia de alertas sobre productos próximos a agotarse o vencer.
 
 
--- Cliente (Opcional a futuro)
-Consultaría productos y precios desde una interfaz sencilla, revisaría promociones y realizaría pedidos en línea. Este perfil se implementará en versiones futuras.
+Por estas razones, resulta fundamental contar con un sistema digital que centralice la información, automatice el control de stock y brinde soporte confiable para la toma de decisiones del negocio.
 
 
-### 3. Funciones necesarias (MVP) 
+## 3. Roles de Usuario
+El sistema contará con distintos perfiles, definidos según sus permisos y funciones:
 
+# Administrador:
+Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, proveedores y generar reportes de ventas.  [Tiene acceso total al sistema. crea, edita y elimina, supervisa todas las operaciones y configuraciones, controla los permisos y roles del resto de usuarios.]  
 
--- Para la primera versión del sistema se implementará lo mínimo indispensable:
 
+# Vendedor:
+Posee permisos limitados. Puede registrar ventas, consultar el stock y emitir boletas simples. No puede eliminar ni modificar información crítica.
 
--- Registrar productos con stock y categorías.
 
+# Cliente (versión futura):
+En versiones posteriores, se incluirá un rol de cliente que podrá consultar productos, revisar precios y realizar pedidos en línea.
 
--- Registrar ventas y descontar automáticamente del inventario.
 
 
--- Consultar reportes simples de ventas del día.
+## 4. Funciones del MVP (Versión Mínima Viable)
 
+* RF1:Registro de productos con stock y categorías.
 
--- Acceso diferenciado por rol: Administrador (completo) y Vendedor (limitado).
 
+* RF2:Registro de ventas con actualización automática del inventario.
 
-### 4. Datos a almacenar 
 
+* RF3:Consulta de reportes simples de ventas diarias.
 
-Producto:
 
+* RF4:Control de acceso diferenciado por rol (Administrador y Vendedor).
 
--- Nombre del producto
 
 
--- Categoría
+## 5. Datos a Almacenar
 
+# Producto
 
--- Precio de compra
+-- ID_Producto
 
+-- Nombre
 
--- Precio de venta
+--Categoría
 
+-- Precio
 
--- Stock disponible
+-- Stock
 
+-- ID_Proveedor
 
--- Stock mínimo (alerta)
 
+# Venta
 
--- Proveedor asociado (opcional)
+-- ID_Venta
 
+-- Fecha
 
-Venta :
+-- ID_Vendedor
 
+-- Total
 
--- ID de la venta
+-- Productos (puede ir como lista o descripción si no manejas detalle separado)
 
 
--- Fecha de la venta
+# Proveedor
 
+-- ID_Proveedor
 
--- Total de la venta
+-- Nombre
 
+-- Contacto
 
--- Vendedor responsable (usuario del sistema)
+-- Correo
 
 
--- Detalle de los productos vendidos: Producto, Cantidad, Precio unitario
+# Usuario
 
+-- ID_Usuario
 
-Proveedor:
+--Nombre
 
+--Contraseña (encriptada)
 
--- Nombre del proveedor
+--Rol
 
 
+<<<<<<< HEAD
 -- Teléfono
 
 
@@ -385,3 +389,5 @@ Mantenimiento y soporte             | Cubre corrección de errores, pequeñas me
 -- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
 
 -- Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras).
+=======
+>>>>>>> feature/requerimientos
