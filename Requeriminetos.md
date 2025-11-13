@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 =======
 ### 10. Requisitos no Funcionales
 >>>>>>> feature/criterio_de_aceptacion
 
 -- Seguridad: cifrado de contraseñas y control de acceso por roles.
 
-<<<<<<< HEAD
+
   PROYECTO: ABARROTECH
 
 
@@ -44,8 +44,6 @@ El propósito principal del sistema es centralizar la información, automatizar 
 El dueño de la tienda ABARROTECH no cuenta con un sistema digital ni base de datos para registrar sus productos ni las ventas realizadas, lo que genera diversas dificultades:
 Pérdida de información y duplicación de registros.
 
-<<<<<<< HEAD
-
 
 ## 3. Roles de Usuario
 El sistema contará con distintos perfiles, definidos según sus permisos y funciones:
@@ -67,7 +65,7 @@ El sistema contará con distintos perfiles, definidos según sus permisos y func
  *Administrador:
 Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, proveedores y generar reportes de ventas.  [Tiene acceso total al sistema. crea, edita y elimina, supervisa todas las operaciones y configuraciones, controla los permisos y roles del resto de usuarios.]  
 
-<<<<<<< HEAD
+
 
 ## 4. Funciones del MVP (Versión Mínima Viable)
 
@@ -88,7 +86,7 @@ En modo local (Docker), los costos de infraestructura son prácticamente nulos.
 
 * RF1:Registro de productos con stock y categorías.
 
-<<<<<<< HEAD
+
 
 * RF2:Registro de ventas con actualización automática del inventario.
 
@@ -126,7 +124,7 @@ En ejecución local mediante Docker, los costos serían prácticamente nulos.
 
 ---
 
-<<<<<<< HEAD
+
 ## 5. Datos a Almacenar
 
 # Producto
@@ -210,7 +208,7 @@ Desarrollar un sistema de gestión integral para tiendas de abarrotes, denominad
 - Las contraseñas deben almacenarse cifradas con bcrypt.  
 - Todos los endpoints deben responder con códigos HTTP correctos (200, 201, 404, 500).
 
-<<<<<<< HEAD
+
 # Proveedor
 
 -- ID_Proveedor
@@ -242,7 +240,7 @@ El sistema ABARROTECH representa una solución integral para la digitalización 
 Gracias a su arquitectura basada en Node.js, MongoDB, Redis y Docker, ofrece una plataforma confiable, escalable y adaptable a futuras ampliaciones, como una interfaz web o integración con servicios externos del SII.  
 Con su desarrollo, se busca modernizar la gestión comercial, optimizar recursos y mejorar la toma de decisiones mediante información precisa y actualizada.  
 
-<<<<<<< HEAD
+
 # Usuario
 
 -- ID_Usuario
