@@ -1,22 +1,44 @@
+<<<<<<< HEAD
+=======
+## 6. Reglas de Negocio
+Actualización automática del stock al registrar ventas.
+>>>>>>> feature/infraestructura_requerimientos
 
   PROYECTO: ABARROTECH
 
+<<<<<<< HEAD
 ## Introduccion:
+=======
+Solo administradores pueden eliminar registros críticos.
+>>>>>>> feature/infraestructura_requerimientos
 
 El proyecto ABARROTECH nace como una iniciativa orientada a mejorar la gestión de una pequeña tienda de abarrotes local que, como muchas otras, enfrenta dificultades al mantener sus registros de forma manual.
 Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los productos en stock y los pedidos a proveedores, lo que ha generado pérdida de información, errores de cálculo, duplicación de datos y falta de control sobre el inventario disponible.
 Estas limitaciones afectan directamente la eficiencia del negocio y la capacidad del dueño para tomar decisiones informadas.
 
+<<<<<<< HEAD
 Frente a esta situación, se propone el desarrollo de ABARROTECH, un sistema informático basado en una API RESTful construida con Node.js, Express y MongoDB Community Edition , complementada con Redis para el manejo de sesiones y cache, y Docker para la contenerización del entorno.
 El propósito principal del sistema es centralizar la información, automatizar los procesos de control de inventario y ventas, y ofrecer una herramienta moderna, segura y escalable para la gestión diaria de tiendas de abarrotes.
 
 
+=======
+Las contraseñas deben almacenarse encriptadas.
+
+
+Se registrará la trazabilidad de cada venta (usuario y fecha).
+Todas las operaciones críticas (eliminación de productos o usuarios) requieren permisos de administrador y validación previa.
+>>>>>>> feature/infraestructura_requerimientos
 
 ## 2. Problemática del negocio
 El dueño de la tienda ABARROTECH no cuenta con un sistema digital ni base de datos para registrar sus productos ni las ventas realizadas, lo que genera diversas dificultades:
 Pérdida de información y duplicación de registros.
 
+### 7. Priorización de Funcionalidades
+Alta: registro de productos y ventas, gestión de usuarios, control de stock.
+Media: reportes básicos y gestión de proveedores.
+Baja: módulo cliente, pedidos en línea y promociones.
 
+<<<<<<< HEAD
 * Dificultad para llevar un control del stock disponible.
 
 
@@ -40,19 +62,60 @@ El sistema contará con distintos perfiles, definidos según sus permisos y func
 
  *Administrador:
 Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, proveedores y generar reportes de ventas.  [Tiene acceso total al sistema. crea, edita y elimina, supervisa todas las operaciones y configuraciones, controla los permisos y roles del resto de usuarios.]  
+=======
+### 8. Flujos Principales del Sistema
+Ingreso de productos por el administrador.
 
 
+Registro de ventas por el vendedor.
+
+
+Descuento automático del stock.
+
+
+Generación de reportes de ventas diarias.
+
+
+## 9. Requisitos Funcionales
+
+RF1: Registrar, modificar y eliminar productos.
+
+RF2: Actualizar el inventario automáticamente al vender.
+
+RF3: Registrar ventas con detalle de productos y totales
+
+RF4: Crear y administrar usuarios con roles.
+
+RF5: Autenticación con JWT y control de sesiones.
+>>>>>>> feature/infraestructura_requerimientos
+
+RF6: Generar reportes básicos de ventas.
+
+<<<<<<< HEAD
  *Vendedor:
 Posee permisos limitados. Puede registrar ventas, consultar el stock y emitir boletas simples. No puede eliminar ni modificar información crítica.
+=======
+RF7: Registrar proveedores asociados.
+>>>>>>> feature/infraestructura_requerimientos
 
+RF8: Exportar listados a Excel
 
+<<<<<<< HEAD
  *Cliente (versión futura):
 En versiones posteriores, se incluirá un rol de cliente que podrá consultar productos, revisar precios y realizar pedidos en línea.
 
 
+=======
+## 10. Requisitos No Funcionales
+Seguridad: cifrado de contraseñas y control de acceso por roles.
+
+
+Rendimiento: búsquedas rápidas (<3 segundos).
+>>>>>>> feature/infraestructura_requerimientos
 
 ## 4. Funciones del MVP (Versión Mínima Viable)
 
+<<<<<<< HEAD
 * RF1:Registro de productos con stock y categorías.
 
 
@@ -213,3 +276,12 @@ Mantenimiento y soporte             | Cubre corrección de errores, pequeñas me
 -- Garantía de corrección de errores críticos dentro de las primeras 4 semanas post entrega.
 
 -- Soporte opcional de mantenimiento mensual (corrección de errores, pequeñas mejoras)
+=======
+Disponibilidad: ejecución continua mediante Docker.
+
+
+Usabilidad: interfaz clara y adaptable.
+
+
+Multiusuario: soporte de conexiones simultáneas.
+>>>>>>> feature/infraestructura_requerimientos
