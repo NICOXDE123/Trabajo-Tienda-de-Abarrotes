@@ -1,4 +1,4 @@
-6. Reglas de Negocio
+## 6. Reglas de Negocio
 Actualización automática del stock al registrar ventas.
 
 
@@ -30,25 +30,25 @@ Descuento automático del stock.
 Generación de reportes de ventas diarias.
 
 
-9. Requisitos Funcionales
+## 9. Requisitos Funcionales
 
 RF1: Registrar, modificar y eliminar productos.
 
- RF2: Actualizar el inventario automáticamente al vender.
+RF2: Actualizar el inventario automáticamente al vender.
 
- RF3: Registrar ventas con detalle de productos y totales
+RF3: Registrar ventas con detalle de productos y totales
 
 RF4: Crear y administrar usuarios con roles.
 
 RF5: Autenticación con JWT y control de sesiones.
 
- RF6: Generar reportes básicos de ventas.
+RF6: Generar reportes básicos de ventas.
 
- RF7: Registrar proveedores asociados.
+RF7: Registrar proveedores asociados.
 
- RF8: Exportar listados a Excel
+RF8: Exportar listados a Excel
 
-10. Requisitos No Funcionales
+## 10. Requisitos No Funcionales
 Seguridad: cifrado de contraseñas y control de acceso por roles.
 
 
