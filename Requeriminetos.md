@@ -19,28 +19,6 @@ El propósito principal del sistema es centralizar la información, automatizar 
 El dueño de la tienda ABARROTECH no cuenta con un sistema digital ni base de datos para registrar sus productos ni las ventas realizadas, lo que genera diversas dificultades:
 Pérdida de información y duplicación de registros.
 
-### 7. Priorización de Funcionalidades
-Alta: registro de productos y ventas, gestión de usuarios, control de stock.
-Media: reportes básicos y gestión de proveedores.
-Baja: módulo cliente, pedidos en línea y promociones.
-
-
-* Dificultad para llevar un control del stock disponible.
-
-
-* Imposibilidad de organizar productos por categorías.
-
-
-* Falta de reportes confiables sobre ingresos y ventas.
-
-
-* Ausencia de control diferenciado de usuarios.
-
-
-* Carencia de alertas sobre productos próximos a agotarse o vencer.
-
-
-Por estas razones, resulta fundamental contar con un sistema digital que centralice la información, automatice el control de stock y brinde soporte confiable para la toma de decisiones del negocio.
 
 
 ## 3. Roles de Usuario
@@ -49,7 +27,7 @@ El sistema contará con distintos perfiles, definidos según sus permisos y func
  *Administrador:
 Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, proveedores y generar reportes de ventas.  [Tiene acceso total al sistema. crea, edita y elimina, supervisa todas las operaciones y configuraciones, controla los permisos y roles del resto de usuarios.]  
 
-=
+
 ## 4. Funciones del MVP (Versión Mínima Viable)
 
 
