@@ -1,5 +1,4 @@
-
-  PROYECTO: ABARROTECH
+PROYECTO: ABARROTECH
 
 
 ## Introduccion:
@@ -10,15 +9,12 @@ Actualmente, la tienda utiliza cuadernos y planillas para anotar las ventas, los
 Estas limitaciones afectan directamente la eficiencia del negocio y la capacidad del dueño para tomar decisiones informadas.
 
 
-Frente a esta situación, se propone el desarrollo de ABARROTECH, un sistema informático basado en una API RESTful construida con Node.js, Express y MongoDB Community Edition , complementada con Redis para el manejo de sesiones y cache, y Docker para la contenerización del entorno.
-El propósito principal del sistema es centralizar la información, automatizar los procesos de control de inventario y ventas, y ofrecer una herramienta moderna, segura y escalable para la gestión diaria de tiendas de abarrotes.
-
-
-
-
 ## 2. Problemática del negocio
 El dueño de la tienda ABARROTECH no cuenta con un sistema digital ni base de datos para registrar sus productos ni las ventas realizadas, lo que genera diversas dificultades:
 Pérdida de información y duplicación de registros.
+
+Frente a esta situación, se propone el desarrollo de ABARROTECH, un sistema informático basado en una API RESTful construida con Node.js, Express y MongoDB Community Edition , complementada con Redis para el manejo de sesiones y cache, y Docker para la contenerización del entorno.
+El propósito principal del sistema es centralizar la información, automatizar los procesos de control de inventario y ventas, y ofrecer una herramienta moderna, segura y escalable para la gestión diaria de tiendas de abarrotes.
 
 
 ## 3. Roles de Usuario
@@ -88,27 +84,7 @@ Tiene acceso completo al sistema. Puede gestionar usuarios, productos, stock, pr
 -- Contacto
 
 -- Correo
-=======
----
-
-# 15. Próximos Pasos
-
-- Confirmación del alcance del proyecto: revisión del documento y validación de requerimientos funcionales.  
-- Configuración del entorno de desarrollo: preparación del entorno con Docker y conexión a MongoDB Community y Redis.  
-- Definición técnica de endpoints: diseño de los endpoints y esquemas de datos para la API.  
-- Inicio del desarrollo de la API REST: implementación de los módulos CRUD, autenticación y manejo de sesiones.  
-- Pruebas unitarias e integración: validación en Postman y registro de evidencias.  
-- Entrega del documento técnico final: documentación y carga en GitHub.  
-- Presentación final: exposición del sistema en ejecución y validación de criterios de aceptación.
-
----
-
-# 15. Conclusión
-
-
-El sistema ABARROTECH representa una solución integral para la digitalización de tiendas de abarrotes.  
-Gracias a su arquitectura basada en Node.js, MongoDB, Redis y Docker, ofrece una plataforma confiable, escalable y adaptable a futuras ampliaciones, como una interfaz web o integración con servicios externos del SII.  
-Con su desarrollo, se busca modernizar la gestión comercial, optimizar recursos y mejorar la toma de decisiones mediante información precisa y actualizada.  
+  
 
 
 # Usuario
@@ -208,15 +184,6 @@ Multiusuario: soporte de conexiones simultáneas.
 
 En el futuro, ABARROTECH podrá ampliarse con una interfaz web o móvil y una integración con el Servicio de Impuestos Internos (SII) para emisión de boletas electrónicas.
 
-# 11. Plazos de Desarrollo
-
-| **Fase** | **Descripción** | **Duración estimada** |
-|-----------|----------------|-----------------------|
-| Fase 1 | Requerimientos y diseño funcional | 2 semanas |
-| Fase 2 | Desarrollo del MVP (mínimo producto viable) | 6 semanas |
-| Fase 3 | Pruebas y ajustes finales | 2 semanas |
-
-**Duración total estimada:** 10 semanas de trabajo.
 
 
 # 11. Plazos de Desarrollo
@@ -323,17 +290,6 @@ Desarrollar un sistema de gestión integral para tiendas de abarrotes, denominad
 **Duración total estimada:** 7 semanas  
 **Entregables:** API funcional + informe PDF + repositorio GitHub documentado.
 
----
-
-# 14. Criterios de Aceptación y Garantías
-
-
-- Endpoints CRUD funcionales y verificados.  
-- Autenticación JWT y contraseñas encriptadas.  
-- API documentada y probada en Postman.  
-- Corrección de errores durante 4 semanas posteriores a la entrega.  
-- Las contraseñas deben almacenarse cifradas con bcrypt.  
-- Todos los endpoints deben responder con códigos HTTP correctos (200, 201, 404, 500)
 
 # Costo Total Estimado del Proyecto
 
