@@ -28,3 +28,5 @@ La arquitectura seguir√° un enfoque modular basado en API REST, lo que permitir√
 3. Requisitos funcionales
 
 4. Diagramas funcionales
+
+![alt text](image.png)
