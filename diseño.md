@@ -1,32 +1,63 @@
-# ==== Diseño Funcional primera parte ==== #
+# Informe de Diseño Lógico y Técnico  
+## Sistema de Gestión – ABARROTECH  
 
-# ** 1. Introducción **
 
-El presente documento describe el Diseño Funcional del sistema ABARROTECH, el cual tiene como objetivo definir de manera detallada el funcionamiento lógico de las principales características del sistema.
-Este documento se basa en el análisis de requerimientos previamente aprobado, y establece cómo se implementarán las funcionalidades necesarias para la gestión de productos, control de inventario, registro de ventas y administración de usuarios.
+**Integrantes:** Felipe Astete, Michael Flores, Nicolas Huenchual, Roberto Villouta  
+**Fecha:** 20/11/2025  
+**Sección:** 01  
+**Profesor:** Michael Campos  
+**Asignatura:** Base de Datos II
 
-El diseño funcional servirá como guía tanto para el equipo de desarrollo como para los responsables de las pruebas, asegurando que el sistema cumpla con los objetivos planteados y mantenga coherencia entre la fase de diseño y la de implementación.
+#### 1.Introducción
 
-# ** 2. Descripción general **
+### Objetivo
+Desarrollar un sistema informático para tiendas de abarrotes que centralice la información, automatice la gestión de productos, ventas y stock, y mejore la toma de decisiones mediante reportes y control de usuarios.
 
-El sistema ABARROTECH permitirá a una tienda de abarrotes administrar su inventario de forma digital, eliminando los registros manuales y reduciendo los errores humanos.
-El sistema se estructurará en módulos principales que reflejan los procesos del negocio:
+### Alcance
+- Registro y control de productos y stock  
+- Registro de ventas (metodología LIFO)  
+- Gestión de usuarios (administrador y vendedor)  
+- Reportes simples de ventas
 
-=== Módulo de Productos: para registrar, actualizar y eliminar productos.
+#### 2. DEFINICIONES Y ACRÓNIMOS
 
-=== Módulo de Ventas: para registrar ventas y descontar automáticamente el stock.
+### Definiciones y Acrónimos
+- **API RESTful:** Comunicación cliente-servidor vía HTTP  
+- **JWT:** JSON Web Token  
+- **CRUD:** Crear, Leer, Actualizar, Eliminar  
+- **MVP:** Producto Mínimo Viable  
 
-=== Módulo de Usuarios: para la gestión de roles (Administrador y Vendedor).
+#### 3. DESCRIPCIÓN GENERAL
 
-=== Módulo de Reportes: para generar informes de ventas diarias y control de stock.
+ABARROTECH es un sistema que utiliza Node.js, MongoDB y Redis para automatizar la gestión de tiendas de abarrotes.  
+Opera bajo arquitectura REST y puede desplegarse localmente o con Docker.
 
-=== Módulo de Proveedores: para registrar los datos de proveedores y su relación con los productos.
+### Usuarios y Roles
+- Administrador  
+- Vendedor  
+- Cliente (futuro)
 
-Cada módulo estará conectado entre sí mediante una base de datos central que garantizará la integridad y trazabilidad de la información.
-La arquitectura seguirá un enfoque modular basado en API REST, lo que permitirá su escalabilidad e integración futura con interfaces gráficas o aplicaciones móviles.
+#### 5. REQUISITOS FUNCIONALES
 
-3. Requisitos funcionales
+## Gestión de productos
+CRUD completo y control de stock.
 
-4. Diagramas funcionales
+## Registro de ventas
+Actualiza stock usando metodología LIFO.
 
-![alt text](image.png)
+## Control de usuarios
+Autenticación con roles.
+
+## Reportes
+Resumen de ventas por fecha y totales.
+
+6. DIAGRAMAS FUNCIONALES
+
+### Caso de uso
+![Diagrama de Caso de Uso](./diagrams/caso-de-uso.png)
+
+### Flujo de Registrar Venta
+![Flujo Registrar Venta](./diagrams/diagrma%20-flujo-proceso.png)
+
+### Diagrama de Secuencia
+![Secuencia Registrar Venta](./diagrams/diagrama-secuencial.png)
