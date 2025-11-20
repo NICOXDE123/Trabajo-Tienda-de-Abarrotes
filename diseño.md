@@ -115,7 +115,7 @@ Resumen de ventas por fecha y totales.
 - JWT válido para sesiones
 
 
-# 🛠️ Diseño Técnico – ABARROTECH
+# Diseño Técnico – ABARROTECH
 
 ## 1. Arquitectura General
 El sistema utiliza una arquitectura por capas:
