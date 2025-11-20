@@ -147,7 +147,7 @@ Colecciones principales:
 - Eliminación lógica (estado activo/inactivo)  
 - Contraseñas cifradas con bcrypt  
 
-![Diagrama de Base de datos(MongoBD)](./diagrams/fLHTQXin47ut-0xJVQbTwXoW4EZ6tgGBpjfitBoK4iRQiQrMAmL9Qp19eNV8EVfGSWJVf2Ufj3_ERXfAmFkmID-CDFDzevcFngAsHIxwFSkj8BXK6Ga5aRGym-pFpuUK13A-VvGmk5HohIPdGnZ15JUMSeJmB4pJsI8QVuB1DMbJEfvpYMBOx_LxRp9QSKcGHkD5c5nC8s02ZUdtDZmZO5m.png)
+![Diagrama de Base de datos(MongoBD)](./diagrams/diagrama-clases.png)
 
 
 ---
