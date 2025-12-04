@@ -5,7 +5,7 @@ El sistema implementa autenticación mediante **JWT**, control de roles (**ADMIN
 
 ---
 
-## Requerimientos del Sistema
+### Requerimientos del Sistema
 
 ## Requerimientos Funcionales
 - El sistema debe permitir crear, editar y eliminar productos.
