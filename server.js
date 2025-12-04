@@ -34,8 +34,14 @@ app.use("/api/productos", productRoutes);
 app.use("/api/ventas", saleRoutes);
 app.use("/api/reportes", reportRoutes);
 
-// Arrancar servidor
+
+// Arrancar servidor SOLO si no estamos en testing
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 API ABARROTECH corriendo en http://localhost:${PORT}`);
-});
+
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`🚀 API ABARROTECH corriendo en http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app; // 👈 necesario para Jest
