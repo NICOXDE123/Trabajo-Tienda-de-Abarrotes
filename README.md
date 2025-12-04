@@ -15,6 +15,13 @@ El sistema implementa autenticación mediante **JWT**, control de roles (**ADMIN
 
 ---
 
+## Pruebas
+El proyecto incluye una prueba automatizada básica con Jest.
+Para ejecutarla:
+*npm test*
+
+---
+
 ## 📁 Estructura del Proyecto
 
 
