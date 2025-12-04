@@ -1,71 +1,82 @@
-const Sale = require("../models/Sale.js");
-const Product = require("../models/Product.js");
+// src/controllers/saleController.js
+const Product = require("../models/Product");
+const Sale = require("../models/Sale");
+const { aplicarLIFO } = require("../services/lifoService");
+const { validarStock } = require("../utils/validarStock");
 
 const registrarVenta = async (req, res) => {
   try {
+    const usuarioId = req.usuario.id;
     const { items } = req.body;
 
-    if (!items || items.length === 0) {
-      return res.status(400).json({ mensaje: "La venta debe incluir productos" });
+    if (!Array.isArray(items) || items.length === 0) {
+      return res.status(400).json({ mensaje: "La venta debe tener al menos un item." });
     }
 
-    // Validar stock y calcular total
     let total = 0;
+    const itemsProcesados = [];
 
     for (const item of items) {
-      const prod = await Product.findById(item.producto);
+      const { productoId, cantidad } = item;
 
-      if (!prod || !prod.activo) {
-        return res.status(400).json({ mensaje: "Producto no válido" });
+      const producto = await Product.findById(productoId);
+      if (!producto) {
+        return res.status(404).json({ mensaje: `Producto no encontrado: ${productoId}` });
       }
 
-      if (prod.stock < item.cantidad) {
-        return res.status(400).json({ mensaje: `Stock insuficiente para ${prod.nombre}` });
+      // Validar stock total (LIFO)
+      const hayStock = validarStock(producto, cantidad);
+      if (!hayStock) {
+        return res.status(400).json({
+          mensaje: `Stock insuficiente para el producto ${producto.nombre} (LIFO)`,
+        });
       }
 
-      total += prod.precio * item.cantidad;
-    }
+      // Aplicar LIFO (modifica lotes)
+      await aplicarLIFO(producto, cantidad);
+      await producto.save();
 
-    // Registrar venta
-    const venta = await Sale.create({
-      vendedor: req.usuario._id,
-      items,
-      total
-    });
+      const subtotal = producto.precio * cantidad;
+      total += subtotal;
 
-    // Actualizar stock (comportamiento LIFO implícito)
-    for (const item of items) {
-      await Product.findByIdAndUpdate(item.producto, {
-        $inc: { stock: -item.cantidad }
+      itemsProcesados.push({
+        producto: producto._id,
+        cantidad,
+        precioUnitario: producto.precio,
+        subtotal,
       });
     }
 
+    const venta = await Sale.create({
+      usuario: usuarioId,
+      items: itemsProcesados,
+      total,
+    });
+
     res.status(201).json({
-      mensaje: "Venta registrada con éxito",
-      venta
+      mensaje: "Venta registrada con LIFO",
+      venta,
     });
   } catch (error) {
-    console.error(error);
+    console.error("❌ Error al registrar venta:", error.message);
     res.status(500).json({ mensaje: "Error al registrar venta" });
   }
 };
 
-// LIFO: ventas más recientes primero
-const obtenerVentasRecientes = async (req, res) => {
+const listarVentas = async (req, res) => {
   try {
     const ventas = await Sale.find()
-      .populate("vendedor", "nombre")
-      .populate("items.producto", "nombre precio")
-      .sort({ fecha: -1 }) // LIFO: más recientes primero
-      .limit(20);
+      .populate("usuario", "nombre email")
+      .populate("items.producto", "nombre precio");
 
-    res.json(ventas);
+    res.json({ ventas });
   } catch (error) {
-    res.status(500).json({ mensaje: "Error al obtener las ventas" });
+    console.error("❌ Error al obtener ventas:", error.message);
+    res.status(500).json({ mensaje: "Error al obtener ventas" });
   }
 };
 
 module.exports = {
   registrarVenta,
-  obtenerVentasRecientes
+  listarVentas,
 };

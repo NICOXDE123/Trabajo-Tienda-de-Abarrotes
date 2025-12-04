@@ -2,9 +2,11 @@
 require("dotenv").config();
 
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
 const morgan = require("morgan");
+
+const connectDB = require("./src/config/db");
+const redisClient = require("./src/config/redis");
 
 const authRoutes = require("./src/routes/authRoutes");
 const productRoutes = require("./src/routes/productRoutes");
@@ -14,26 +16,26 @@ const reportRoutes = require("./src/routes/reportRoutes");
 const app = express();
 
 // Middlewares globales
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 app.use(morgan("dev"));
 
 // Conexión a MongoDB
-mongoose
-  .connect(process.env.MONGO_URI, {
-    dbName: "abarrotech_db"
-  })
-  .then(() => console.log("✅ Conexión a MongoDB exitosa"))
-  .catch((err) => console.error("❌ Error al conectar MongoDB:", err));
+connectDB();
 
-// Rutas principales
+// Redis ya se conecta en config/redis, acá solo escuchamos eventos opcionales
+redisClient.on("ready", () => {
+  console.log("✅ Redis listo para usar");
+});
+
+// Rutas
 app.use("/api/auth", authRoutes);
 app.use("/api/productos", productRoutes);
 app.use("/api/ventas", saleRoutes);
 app.use("/api/reportes", reportRoutes);
 
-// Puerto del servidor
+// Arrancar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor ABARROTECH funcionando en http://localhost:${PORT}`);
+  console.log(`🚀 API ABARROTECH corriendo en http://localhost:${PORT}`);
 });

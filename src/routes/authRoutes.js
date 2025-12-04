@@ -1,15 +1,14 @@
-
 // src/routes/authRoutes.js
-
 const express = require("express");
-const { registrarUsuario, login } = require("../controllers/authController.js");
-const { protegerRuta, soloAdmin } = require("../middlewares/authMiddleware.js");
+const { login, registrarUsuario } = require("../controllers/authController");
+const { protegerRuta, soloAdmin } = require("../middlewares/authMiddleware");
 
 const router = express.Router();
 
-// Solo ADMIN puede registrar nuevos usuarios
-router.post("/register", protegerRuta, soloAdmin, registrarUsuario);
-
+// Login público
 router.post("/login", login);
+
+// Registro solo para ADMIN (después de crear el primer admin con el script)
+router.post("/register", protegerRuta, soloAdmin, registrarUsuario);
 
 module.exports = router;

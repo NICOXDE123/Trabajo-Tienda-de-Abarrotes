@@ -1,16 +1,31 @@
-// src/models/Product.js
 const mongoose = require("mongoose");
 
-const productSchema = new mongoose.Schema(
-  {
-    nombre: { type: String, required: true },
-    categoria: { type: String },
-    precio: { type: Number, required: true },
-    stock: { type: Number, default: 0 },
-    proveedor: { type: String },
-    activo: { type: Boolean, default: true }
+const loteSchema = new mongoose.Schema({
+  cantidad: { type: Number, required: true },
+  fechaIngreso: { type: Date, default: Date.now }
+});
+
+// 📌 PRODUCTO SCHEMA
+const productSchema = new mongoose.Schema({
+  nombre: { type: String, required: true },
+  precio: { type: Number, required: true },
+  categoria: { type: String, required: true },
+  descripcion: { type: String },
+
+  // 🔥 FIX: asegurar que siempre sea un array
+  lotes: {
+    type: [loteSchema],
+    default: function () {
+      return [];
+    }
   },
-  { timestamps: true }
-);
+
+}, { timestamps: true });
+
+// 🔥 FIX: evitar error del reduce cuando lotes = undefined
+productSchema.virtual("stockTotal").get(function () {
+  const lotes = this.lotes || [];
+  return lotes.reduce((acc, lote) => acc + lote.cantidad, 0);
+});
 
 module.exports = mongoose.model("Product", productSchema);

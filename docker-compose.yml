@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  api:
+    build: .
+    container_name: abarrotech-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.docker   # 🔥 FIX: usar variables correctas
+    depends_on:
+      - mongo
+      - redis
+    restart: always
+
+  mongo:
+    image: mongodb/mongodb-community-server:latest
+    container_name: abarrotech-mongo
+    ports:
+      - "27017:27017"
+    restart: always
+
+  redis:
+    image: redis:latest
+    container_name: abarrotech-redis
+    ports:
+      - "6379:6379"
+    restart: always

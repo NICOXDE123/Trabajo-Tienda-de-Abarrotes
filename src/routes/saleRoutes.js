@@ -1,14 +1,14 @@
+// src/routes/saleRoutes.js
 const express = require("express");
-const {
-  registrarVenta,
-  obtenerVentasRecientes
-} = require("../controllers/saleController.js");
-
-const { protegerRuta } = require("../middlewares/authMiddleware.js");
+const { registrarVenta, listarVentas } = require("../controllers/saleController");
+const { protegerRuta } = require("../middlewares/authMiddleware");
 
 const router = express.Router();
 
+// Registrar venta (VENDEDOR o ADMIN)
 router.post("/", protegerRuta, registrarVenta);
-router.get("/recientes", protegerRuta, obtenerVentasRecientes);
+
+// Listar ventas (en un mundo real solo ADMIN, aquí protegido genérico)
+router.get("/", protegerRuta, listarVentas);
 
 module.exports = router;
