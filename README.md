@@ -17,16 +17,16 @@ El sistema implementa autenticación mediante **JWT**, control de roles (**ADMIN
 
 ## 📁 Estructura del Proyecto
 
-/config → Conexión a MongoDB y Redis
-/controllers → Lógica de autenticación, productos, ventas, reportes
-/middleware → Validación de JWT y roles
-/models → User, Product, Sale
-/routes → Rutas principales de la API
-/services → Lógica LIFO y validación de stock
-Dockerfile → Imagen para Node
-docker-compose → API + Mongo + Redis
-server.js → Inicio del servidor
 
+- **/config** → Conexión a MongoDB y Redis  
+- **/controllers** → Lógica de autenticación, productos, ventas y reportes  
+- **/middleware** → Validación de JWT y roles  
+- **/models** → Modelos: User, Product, Sale  
+- **/routes** → Rutas principales de la API  
+- **/services** → Lógica LIFO y validación de stock  
+- **Dockerfile** → Imagen para Node  
+- **docker-compose.yml** → API + MongoDB + Redis  
+- **server.js** → Inicio del servidor  
 
 ---
 
