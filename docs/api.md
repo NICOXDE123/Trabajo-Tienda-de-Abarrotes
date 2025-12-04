@@ -5,10 +5,10 @@ Todas las rutas privadas requieren autenticación mediante **JWT**.
 
 ---
 
-# 1. Autenticación
+## 1. Autenticación
 
-## POST /api/auth/login
-Inicia sesión y retorna un token JWT válido.
+# POST /api/auth/login
+*Inicia sesión y retorna un token JWT válido.*
 
 {
   "email": "usuario@correo.com",
@@ -21,8 +21,8 @@ Respuesta (200 OK)
   "token": "JWT_GENERADO"
 }
 
-POST /api/auth/register (solo ADMIN)
-Registra un nuevo usuario en el sistema.
+# POST /api/auth/register (solo ADMIN)
+*Registra un nuevo usuario en el sistema.*
 
 
 {
@@ -32,26 +32,27 @@ Registra un nuevo usuario en el sistema.
   "rol": "ADMIN"
 }
 
-Roles permitidos
-ADMIN
+-Roles permitidos
+-ADMIN
 
 ---
 
 ## 👥 2. Usuarios (Roles)
-Rol	Permisos
-ADMIN	Crear usuarios, gestionar productos, ver reportes
-VENDEDOR	Registrar ventas, consultar productos
+- Rol	Permisos
+- ADMIN: Crear usuarios, gestionar productos, ver reportes.
+- VENDEDOR: Registrar ventas, consultar productos.
 
 ---
 
 ## 🛒 3. Productos
-GET /api/productos
-Obtiene todos los productos.
 
-Requiere JWT
-Sí
+# GET /api/productos.
 
-Respuesta
+*Obtiene todos los productos.*
+
+- Requiere JWT Sí
+
+- Respuesta
 
 [
   {
@@ -63,8 +64,8 @@ Respuesta
   }
 ]
 
-POST /api/productos (solo ADMIN)
-Crea un producto nuevo.
+# POST /api/productos (solo ADMIN)
+*Crea un producto nuevo.*
 
 
 {
@@ -74,32 +75,33 @@ Crea un producto nuevo.
   "descripcion": "Arroz grado 1"
 }
 
-PUT /api/productos/:id (solo ADMIN)
-Actualiza un producto existente.
+# PUT /api/productos/:id (solo ADMIN)
+*Actualiza un producto existente.*
 
 
 {
   "precio": 1100
 }
 
-DELETE /api/productos/:id (solo ADMIN)
-Elimina un producto del sistema.
+# DELETE /api/productos/:id (solo ADMIN)
+-Elimina un producto del sistema.
 
-POST /api/productos/:id/agregar-stock
-Agrega un nuevo lote al producto.
+# POST /api/productos/:id/agregar-stock
+-Agrega un nuevo lote al producto.
 
 {
   "cantidad": 20
 }
 
 Descripción
-Registra un lote con cantidad y fecha de ingreso.
-Usado luego para LIFO en ventas.
+*Registra un lote con cantidad y fecha de ingreso.*
+*Usado luego para LIFO en ventas.*
 
 ---
 ## 4. Ventas
-POST /api/ventas
-Registra una venta aplicando el método LIFO.
+
+# **POST /api/ventas
+*Registra una venta aplicando el método LIFO.*
 
 
 {
@@ -108,7 +110,7 @@ Registra una venta aplicando el método LIFO.
   ]
 }
 
-Respuesta
+-Respuesta
 
 {
   "total": 3500,
@@ -123,16 +125,18 @@ Respuesta
   "usuario": "ID_DEL_VENDEDOR"
 }
 
-Errores posibles
-409: Stock insuficiente
+-Errores posibles
+-409: Stock insuficiente
 
-400: Datos incompletos
+-400: Datos incompletos
 
 --- 
 
 ## 📊 5. Reportes
-GET /api/reportes/ventas-por-dia
-Genera un resumen de ventas agrupado por fecha.
+
+# GET /api/reportes/ventas-por-dia.
+
+*Genera un resumen de ventas agrupado por fecha.*
 
 Respuesta
 
@@ -144,20 +148,21 @@ Respuesta
   }
 ]
 
-Notas
-Puede responder desde Redis (caché) si la consulta es repetida.
+-Notas
+*Puede responder desde Redis (caché) si la consulta es repetida.*
 
-Si aparece "fuente": "cache", significa que Redis funcionó correctamente.
+-Si aparece "fuente": "cache", significa que Redis funcionó correctamente.
 
 ---
 
 ## ❌ 6. Errores Comunes
-Código	Significado
-401	Falta token o token inválido
-403	Rol no autorizado
-400	Datos incompletos
-409	Stock insuficiente
-500	Error interno del servidor
+ Código | Significado                  |
+| ------ | ---------------------------- |
+| 401    | Falta token o token inválido |
+| 403    | Rol no autorizado            |
+| 400    | Datos incompletos            |
+| 409    | Stock insuficiente           |
+| 500    | Error interno del servidor   |
 
 ---
 
