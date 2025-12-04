@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛒 ABARROTECH – API REST de Gestión de Inventario y Ventas
 
 ABARROTECH es una API REST desarrollada con **Node.js, Express, MongoDB y Redis**, diseñada para gestionar productos, lotes de stock, ventas y reportes diarios.  
@@ -154,3 +155,5 @@ Proyecto desarrollado por:
 ⚡ Redis con cache en reportes  
 
 ---
+=======
+>>>>>>> feature/api.md
