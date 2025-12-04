@@ -5,6 +5,31 @@ El sistema implementa autenticación mediante **JWT**, control de roles (**ADMIN
 
 ---
 
+## Requerimientos del Sistema
+
+## Requerimientos Funcionales
+- El sistema debe permitir crear, editar y eliminar productos.
+- El administrador debe poder agregar stock mediante lotes (LIFO).
+- Los vendedores deben poder registrar ventas.
+- El sistema debe descontar stock aplicando la metodología LIFO.
+- Debe existir autenticación mediante JWT.
+- Debe permitir consultar productos, ventas y reportes diarios.
+
+## Requerimientos No Funcionales
+- La API debe responder de forma rápida utilizando caché (Redis).
+- La base de datos debe permitir almacenar documentos dinámicos (MongoDB).
+- El sistema debe tener control de acceso por roles (admin y vendedor).
+- Operaciones críticas deben validar datos antes de modificar el inventario.
+- La arquitectura debe ser modular y fácil de mantener.
+
+## Reglas del Negocio
+- Cada entrada de stock se registra como un lote independiente.
+- El lote más reciente debe ser el primero en consumirse (LIFO).
+- Los vendedores solo pueden consultar productos y registrar ventas.
+- Los administradores son los únicos que pueden gestionar inventario.
+
+---
+
 ## 🚀 Tecnologías Utilizadas
 
 - Node.js + Express
