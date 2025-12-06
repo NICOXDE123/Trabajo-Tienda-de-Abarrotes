@@ -11,8 +11,8 @@ Todas las rutas privadas requieren autenticación mediante **JWT**.
 *Inicia sesión y retorna un token JWT válido.*
 
 {
-  "email": "usuario@correo.com",
-  "password": "123456"
+  "email": "admin@abarrotech.com",
+  "password": "admin123"
 }
 
 Respuesta (200 OK)
@@ -28,8 +28,8 @@ Respuesta (200 OK)
 {
   "nombre": "Juan Pérez",
   "email": "juan@example.com",
-  "password": "123456",
-  "rol": "ADMIN"
+  "password": "vend2345",
+  "rol": "VENDEDOR"
 }
 
 -Roles permitidos
@@ -106,7 +106,10 @@ Descripción
 
 {
   "items": [
-    { "productoId": "ID_PRODUCTO", "cantidad": 3 }
+    { 
+     "productoId": "ID_PRODUCTO"
+     "cantidad": 3 
+     }
   ]
 }
 
